@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="canvas.css">
+  </head>
+  <body>
+    <header>
+      <ul class="main-menu">
+        <li>
+          <a href="#">
+            <!-- Отрисовка значка главного меню (три линии) -->
+            <div class="main-menu-icon">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </a>
+          <span class="title">CodeJam-Canvas</span>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <nav>
+        <div class="box-menu">
+          <ul class="choose-canvas-menu">
+            <li><img src="./data/icon-sharefill.svg" alt="paint icon"><span>Paint bucket</span></li>
+            <li class="line-below"><img src="./data/icon-upload.svg" alt="choose color icon"><span>Choose color</span></li>
+            <li><img src="./data/icon-copy.svg" alt="move icon"><span>Move</span></li>
+            <li><img src="./data/icon-move.svg" alt="transform icon"><span>Transform</span></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="box-menu">
+          <ul class="choose-canvas-menu">
+            <li><img src="./data/icon-curcolor.svg" alt="current color icon"><span>Current color</span></li>
+            <li class="line-below"><img src="./data/icon_prevcolor.svg" alt="prev color icon"><span>Prev color</span></li>
+            <li><img src="./data/icon-red.svg" alt="red circle icon"><span>red</span></li>
+            <li><img src="./data/icon-blue.svg" alt="blue circle icon"><span>blue</span></li>
+            <li></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="canvas-div">
+        <canvas id="canvas">Your browser does not support canvas</canvas>
+      </div>
+
+      <div class="additional-menu">
+        <div class="box-menu">
+          <ul class="choose-canvas-menu choose-image-list">
+            <li onclick="show4x4()">&#65794; 4x4</li>
+            <li onclick="show32x32()">&#65794; 32x32</li>
+            <li onclick="showImg()">&#65794; 256x256</li>
+          </ul>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+      <p>Do You like it?</p>
+    </footer>
+
+    <script src="./canvas.js"></script>
+  </body>
+</html>
